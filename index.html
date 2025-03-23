@@ -10,15 +10,23 @@
 </head>
 <body>
     <nav>
-        <div class="container">
-            <span class="logo">UTW.</span>
-            <span id="about" class="head about">About us</span>
-            <span id="Contact" class="head contact">Contact</span>
-            <span id="Offer" class="head offer">What we offer</span>
+        <div class="container1">
+            <span class="logo dropdown">UTW.</span>
+            <div class="dropdown-content dontdisplayonpc">
+                <a href="#aboutus">About Us</a><br>
+                <a href="#contact">Contact</a><br>
+                <a href="#services">What We Offer</a>
+            </div>
+            <div class="head dontdisplayonmobile">
+                <span class="about">About us</span>
+                <a href="#contact" class="contact">Contact</a>
+                <a href="#offer" class="offer">What we offer</a>
+            </div>
         </div>
     </nav>
 
     <section class="hero">
+        <h2 class="side">Use Time</h2>
         <div class="container">
             <div class="hero-content">
                 <h1>You Still Have Time<br>Use It Wisely</h1>
@@ -26,11 +34,12 @@
                 <a href="#contact" class="cta-button">Get Started</a>
             </div>
         </div>
+        <h2 class="side">Weisly-UTW</h2>
     </section>
 
     <section id="services" class="container">
         <div class="move">
-        <h2>What I Offer</h2>
+        <h2>What We Offer</h2>
         </div>
         <div class="services-grid">
             <div class="service-card">
@@ -65,7 +74,12 @@
             </div>            
         </div>
     </section>
-
+<section id="offer" class="container">
+    <h1>Examples</h1>
+    <div class="example">
+        <img src="Screenshot_10.png" width="400px">
+    </div>
+</section>
     <section id="contact" class="container">
         <div class="move">
         <h2>Let's Work Together</h2>
@@ -85,14 +99,15 @@
                 <p id="form-status" class="form-status"></p>
             </form>
             <p style="margin-top: 2rem;">Or reach me directly at 
-                <a href="mailto:utw.creation@gmail.com" style="color: #7c3aed; text-decoration: none;">utw.creation@gmail.com</a>
+                <a  href="mailto:utw.creation@gmail.com" style="color: #7c3aed; text-decoration: none;">utw.creation@gmail.com</a>
             </p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 UTW_Websites. All rights reserved.</p>
+            <p id="aboutus">&copy; 2025 UTW_Websites. All rights reserved.</p>
+            <p></p>
         </div>
     </footer>
 </body>

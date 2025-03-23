@@ -26,32 +26,34 @@ body {
     margin: 0 auto;
     padding: 0 2rem;
 }
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
 
 .head {
-    position:relative;
-    left: 30%;
+    display: flex; 
+    justify-content: space-evenly;  
+    flex-direction: row;
     font-size: 1.5rem;
     font-weight: 700;
     color: #5213c0;
-}
-
-.about {
-    left: 300px;
     cursor: pointer;
+}
+.about {
+    margin-right: 120px;
 }
 .about:hover {
     color: #430ca1;
 }
-.contact {
-    left: 500px;
-    cursor: pointer;
+.contact{
+    margin-right: 120px;
 }
 .contact:hover {
     color: #430ca1;
-}
-.offer {
-    left: 700px;
-    cursor: pointer;
 }
 .offer:hover {
     color: #430ca1;
@@ -80,6 +82,15 @@ nav {
 
 .hero-content {
     max-width: 600px;
+}
+.side {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+    width: 200px;
+    color: #6d28d9;
 }
 
 h1 {
@@ -139,6 +150,15 @@ section {
     border-radius: 15px;
     transition: transform 0.3s ease;
 }
+.example{
+    display: flex;
+    justify-content: center;
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    width: 500px;
+}
 
 .service-card:hover {
     transform: translateY(-10px);
@@ -155,7 +175,6 @@ footer {
     padding: 3rem 0;
     background: #1a1a1a;
 }
-
 /* Add form status styles */
 .form-status {
     margin-top: 1rem;
@@ -171,7 +190,6 @@ footer {
     color: #ff3860;
     display: block;
 }
-
 @keyframes fadeUp {
     to {
         opacity: 1;
@@ -179,12 +197,37 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     h1 {
         font-size: 2.5rem;
     }
-    
     .tagline {
         font-size: 1.2rem;
+    }
+    .dontdisplayonmobile    {
+        display: none;
+      }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #7c3aed;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        color: rgb(60, 0, 128);
+        font-size: 10px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+}
+@media (min-width: 801px) {
+    .dontdisplayonpc {
+        display: none;
     }
 }
