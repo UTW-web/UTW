@@ -4,9 +4,14 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
 .move {
     position: relative;
     top: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +25,36 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+.head {
+    position:relative;
+    left: 30%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5213c0;
+}
+
+.about {
+    left: 300px;
+    cursor: pointer;
+}
+.about:hover {
+    color: #430ca1;
+}
+.contact {
+    left: 500px;
+    cursor: pointer;
+}
+.contact:hover {
+    color: #430ca1;
+}
+.offer {
+    left: 700px;
+    cursor: pointer;
+}
+.offer:hover {
+    color: #430ca1;
 }
 
 nav {

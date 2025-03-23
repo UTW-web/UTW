@@ -62,5 +62,3 @@ async function handleSubmit(event) {
     
     status.style.display = 'block';
 }
-
-form.addEventListener('submit', handleSubmit);
