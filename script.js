@@ -1,13 +1,3 @@
- // Smooth scroll for anchor links
- document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 // Reveal animations on scroll
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -61,4 +51,13 @@ async function handleSubmit(event) {
     }
     
     status.style.display = 'block';
+}
+/* hambruger dropdown*/
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
 }

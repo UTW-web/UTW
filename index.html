@@ -11,34 +11,40 @@
 <body>
     <nav>
         <div class="container1">
-            <span class="logo dropdown">UTW.</span>
-            <div class="dropdown-content dontdisplayonpc">
-                <a href="#aboutus">About Us</a><br>
-                <a href="#contact">Contact</a><br>
-                <a href="#services">What We Offer</a>
-            </div>
+            <span class="logo dontdisplayonpc">Use Time-</span>
+            <span class="logo">UTW.</span>
+            <span class="logo dontdisplayonpc">-Weisly</span>
             <div class="head dontdisplayonmobile">
-                <span class="about">About us</span>
+                <a href="#Aboutus" class="about">About us</a>
                 <a href="#contact" class="contact">Contact</a>
-                <a href="#offer" class="offer">What we offer</a>
+                <a href="#services" class="offer">What we offer</a>
             </div>
         </div>
     </nav>
-
+ <div class="hamburger dontdisplayonpc">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="myLinks">
+                    <a href="#Aboutus">About us</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#services">What we offer</a>
+                </div>
+            </div>
     <section class="hero">
-        <h2 class="side">Use Time</h2>
+        <h2 class="side dontdisplayonmobile">Use Time</h2>
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content mover">
                 <h1>You Still Have Time<br>Use It Wisely</h1>
                 <p class="tagline">Professional website development services that help you make the most of your online presence</p>
-                <a href="#contact" class="cta-button">Get Started</a>
+                <a href="#contact-form" class="cta-button">Get Started</a>
             </div>
         </div>
-        <h2 class="side">Weisly-UTW</h2>
+        <h2 class="side dontdisplayonmobile">Weisly-UTW</h2>
     </section>
 
     <section id="services" class="container">
-        <div class="move">
+        <div class="move short">
         <h2>What We Offer</h2>
         </div>
         <div class="services-grid">
@@ -74,12 +80,50 @@
             </div>            
         </div>
     </section>
-<section id="offer" class="container">
-    <h1>Examples</h1>
-    <div class="example">
-        <img src="Screenshot_10.png" width="400px">
-    </div>
-</section>
+    
+    <section id="offer" class="container dontdisplayonmobile">
+        <h1 class="text-example">Style</h1>
+        <div class="example">
+            <img src="Screenshot_10.png" width="400px">
+            <div class="description-container-left">
+                <h1>Futuristic</h1>
+                <p class="description-text">Discover the future of technology and design with a sleek, innovative website experience.</p>
+            </div>
+        </div>
+        <div class="example image2">
+            <img src="example2.png" width="400px">
+            <div class="description-container-right">
+                <h1>Simple</h1>
+                <p class="description-text">A clean, user-friendly website with a straightforward design for easy navigation.</p>
+            </div>
+        </div>
+        <div class="example">
+            <img src="example3.png" width="400px">
+            <div class="description-container-left">
+                <h1>Sleek</h1>
+                <p class="description-text">A modern, streamlined website with a polished design and seamless user experience.</p>
+            </div>
+        </div>
+    </section>
+    <section id="offer" class="container dontdisplayonpc">
+        <h1 class="text-example">Style</h1>
+        <h3>Futuristic</h3>
+                <p class="description-text">Discover the future of technology and design with a sleek, innovative website experience.</p>
+        <div class="example">
+            <img src="Screenshot_10.png" width="400px">
+        </div>
+        <h3>Simple</h3>
+                <p class="description-text">A clean, user-friendly website with a straightforward design for easy navigation.</p>
+        <div class="example">
+            <img src="example2.png" width="400px">
+        </div>
+        <h3>Sleek</h3>
+                <p class="description-text">A modern, streamlined website with a polished design and seamless user experience.</p>
+        <div class="example">
+            <img src="example3.png" width="400px">
+        </div>
+    </section>  
+    
     <section id="contact" class="container">
         <div class="move">
         <h2>Let's Work Together</h2>
@@ -103,7 +147,12 @@
             </p>
         </div>
     </section>
-
+  <section id="Aboutus" class="container">
+        <h1 class="aboutus">About us</h1>
+        <p class="description-text about-text">We are a dynamic company focused on innovation and excellence.
+             Our team is dedicated to providing cutting-edge solutions that drive success.
+              With a customer-first approach, we aim to exceed expectations. We turn ideas into impactful results.</p>
+    </section>
     <footer>
         <div class="container">
             <p id="aboutus">&copy; 2025 UTW_Websites. All rights reserved.</p>
