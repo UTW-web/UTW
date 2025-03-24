@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-
+.text-align-center {
+    text-align: center;
+}
 .move {
     position: relative;
     top: 20px;
@@ -35,10 +37,7 @@ body {
     width: auto;
 }
 
-.image2 {
-    position: relative;
-    left: 800px;
-}
+
 
 .head {
     display: flex; 
@@ -89,10 +88,6 @@ nav {
 .hero-content {
     max-width: 600px;
 }
-.aboutus {
-    position: relative;
-    left: 40%;
-}
 .about-text {
     display: flex;
     justify-content: center;
@@ -110,13 +105,23 @@ nav {
     position:relative;
     left: 50%;
 }
-.description-container-right {
-    position:relative;
-    right: 1000px;
-} 
+.example    {
+    display: flex;
+    justify-content: space-between;
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    width: 450px;
+    }
 .description-text {
     color: rgba(255, 255, 255, 0.685);
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.title {
+    padding-top: 30px;
 }
 html,body{
     overflow-x: hidden;
@@ -131,7 +136,10 @@ h1 {
     transform: translateY(20px);
     animation: fadeUp 1s ease forwards;
 }
-
+.description-container-right {
+    position:relative;
+    right: 1000px;
+} 
 .tagline {
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -210,16 +218,7 @@ section {
 .hamburger.show #myLinks {
     display: block;
 }
-.example{
-    display: flex;
-    justify-content: space-between;
-    background: #1a1a1a;
-    padding: 2rem;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-    margin-bottom: 30px;
-    width: 450px;
-}
+
 .text-example {
     padding: 20px;
 }
@@ -253,6 +252,7 @@ footer {
     color: #ff3860;
     display: block;
 }
+
 @keyframes fadeUp {
     to {
         opacity: 1;
@@ -273,6 +273,25 @@ footer {
       
         font-size: 2.5rem;
     }
+    .width-style {
+        width: auto;
+    }
+    img {
+        /* Responsive images (ensure images don't scale beyond their parents) */
+      
+        /* Part 1: Set a maxium relative to the parent */
+        max-width: 100%;
+      
+        /* IE7-8 need help adjusting responsive images */
+        width: auto\9;
+      
+        /* Part 2: Scale the height according to the width, otherwise you get stretching */
+        height: auto;
+      
+        vertical-align: middle;
+        border: 0;
+        -ms-interpolation-mode: bicubic;
+      }
     .tagline {
         font-size: 1.2rem;
     }
@@ -297,3 +316,25 @@ footer {
     padding-top: 10px;
     }
 }
+@media (min-width: 1360px) {
+    .image2 {
+        position: relative;
+        left: 800px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1360px) {
+    .future {
+        position: relative;
+        left: 10%;
+    }
+    .simple {
+        position: relative;
+        left: 20%;
+    }
+    .sleek {
+        position: relative;
+        left: 25%;
+    }
+}
+
