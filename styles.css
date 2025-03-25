@@ -193,7 +193,40 @@ section {
     display: inline-block;
     top:100px;
 }
-
+.cookie-banner, .cookie-modal {
+    position: fixed;
+    bottom: 10px;
+    left: 30%;
+    right: 30%;
+    background: #d2d1d6;
+    color: rgb(24, 26, 63);
+    padding: 15px;
+    text-align: center;
+    border-radius: 50px;
+  }
+.cookie-button {
+    color: black;
+    background: rgb(83, 83, 216);
+    border-radius: 100px;
+    width: 55%;
+}
+  .cookie-modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    background: rgb(255, 255, 255);
+    color: black;
+    padding: 20px;
+    border-radius: 50px;
+    display: none;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin: 10px 0;
+  }
+  
 .hamburger a.icon {
     background: black;
     color: white;
@@ -243,6 +276,16 @@ footer {
     padding: 0.5rem;
     border-radius: 4px;
     display: none;
+}
+.Style-color {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #3abaed, #2842d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease forwards;
 }
 .form-status.success {
     color: #7c3aed;
