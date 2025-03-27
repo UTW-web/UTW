@@ -9,14 +9,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Reveal animations on scroll
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
-        }
+// JavaScript
+function checkVisibility() {
+    const elements = document.querySelectorAll('.reveal');
+    const windowHeight = window.innerHeight;
+  
+    elements.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+      
+      if (elementTop < windowHeight * 0.9) {
+        element.classList.add('active');
+      }
     });
-});
+  }
+  
+  // Initial check
+  checkVisibility();
+  
+  // Listen for scroll events with debounce
+  let isScrolling;
+  window.addEventListener('scroll', () => {
+    window.clearTimeout(isScrolling);
+    isScrolling = setTimeout(checkVisibility, 100);
+  });
+
+
 
 document.querySelectorAll('.service-card').forEach((el) => {
     observer.observe(el);
