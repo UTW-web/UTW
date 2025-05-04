@@ -1,37 +1,4 @@
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
 
-// Reveal animations on scroll
-// JavaScript
-function checkVisibility() {
-    const elements = document.querySelectorAll('.reveal');
-    const windowHeight = window.innerHeight;
-  
-    elements.forEach(element => {
-      const elementTop = element.getBoundingClientRect().top;
-      
-      if (elementTop < windowHeight * 0.9) {
-        element.classList.add('active');
-      }
-    });
-  }
-  
-  // Initial check
-  checkVisibility();
-  
-  // Listen for scroll events with debounce
-  let isScrolling;
-  window.addEventListener('scroll', () => {
-    window.clearTimeout(isScrolling);
-    isScrolling = setTimeout(checkVisibility, 100);
-  });
 
 
 

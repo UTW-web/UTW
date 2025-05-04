@@ -270,16 +270,6 @@ section {
 .service-card:hover {
     transform: translateY(-10px);
 }
-.reveal {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.7s ease;
-  }
-  
-  .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
 .service-icon {
     font-size: 2.5rem;
     color: #7c3aed;
