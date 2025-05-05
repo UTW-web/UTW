@@ -1,7 +1,4 @@
 
-
-
-
 document.querySelectorAll('.service-card').forEach((el) => {
     observer.observe(el);
 });
