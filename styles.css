@@ -37,8 +37,6 @@ body {
     width: auto;
 }
 
-
-
 .head {
     display: flex; 
     justify-content: space-evenly;  
@@ -63,7 +61,12 @@ body {
 .offer:hover {
     color: #430ca1;
 }
-
+.automation {
+    margin-left: 120px;
+}
+.automation:hover {
+    color: #430ca1;
+}
 nav {
     padding: 2rem 0;
     position: fixed;
@@ -251,7 +254,12 @@ section {
 .hamburger #myLinks {
     display: none;
 }
-
+.move2 {
+    margin: 100px;
+}
+.move3 {
+    margin-top: 100px;
+}
 .hamburger a {
     color: white;
     padding: 14px 16px;
@@ -312,7 +320,12 @@ footer {
         transform: translateY(0);
     }
 }
-
+@media (min-width: 1770px) {
+    .head-move {
+    position: relative;
+    left: 300px;
+}
+}
 @media (max-width: 800px) {
     body {
         width: auto;
