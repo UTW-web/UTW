@@ -52,6 +52,19 @@ document.addEventListener("click", function (e) {
 });
 
 
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTop = document.getElementById('back-to-top');
+            const showAfter =300; 
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > showAfter) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+        });
+
 
 // Cookie Consent Handling
 document.addEventListener("DOMContentLoaded", function() {

@@ -92,7 +92,26 @@ nav {
     font-weight: 700;
     color: #7c3aed;
 }
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #7c3aed;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
 
+}
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
 .hero {
     height: 100vh;
     display: flex;
