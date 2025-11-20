@@ -282,11 +282,11 @@ section {
     align-items:center;
     text-align:center;
 }
-#save-preferences {
+.save-preferences {
     font-size:70%;
 }
 @media (max-width:400px) {
-    #save-preferences {
+    .save-preferences {
         font-size:60%;
     }
 }
