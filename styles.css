@@ -11,7 +11,9 @@
     position: relative;
     top: 20px;
 }
-
+a {
+    text-decoration: none;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -179,6 +181,7 @@ h1 {
     animation: fadeUp 1s ease 0.4s forwards;
     cursor: pointer;
 }
+
 button {
     border: rgb(13, 9, 60) 2px solid;
     cursor: pointer;
