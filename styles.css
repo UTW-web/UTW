@@ -43,10 +43,13 @@ body {
 .container1 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
     width: auto;
+    min-height:3.5rem;
+    
 }
 
 .head {
@@ -243,7 +246,7 @@ section {
     position: relative;
     display: inline-block;
     position:fixed;
-    top: 2.4em;
+    top: 3.5em;
     z-index:100000;
 }
 .cookie-modal {
