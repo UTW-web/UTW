@@ -7,7 +7,8 @@ document.querySelectorAll('.service-card').forEach((el) => {
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
 
-async function handleSubmit(event) {
+async function handleSubmit(event) 
+{
     event.preventDefault();
     const data = new FormData(event.target);
     
@@ -71,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const banner = document.getElementById("cookie-banner");
     const modal = document.getElementById("cookie-modal");
     const manageBtn = document.getElementById("manage-cookies");
-    const acceptAllBtn = documznt.getElementById("accept-all");
+    const acceptAllBtn = document.getElementById("accept-all");
     const savePreferencesBtn = document.getElementById("save-preferences");
 
     const analyticsCheckbox = document.getElementById("analytics-cookies");
@@ -84,7 +85,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (savedPreferences.essential) {
         banner.style.display = "none";
+        modal.style.display = "none";
         loadCookies();
+    } else {
+        banner.style.display = "flex";
+        modal.style.display = "none";
     }
 
     manageBtn.addEventListener("click", function() {
