@@ -139,6 +139,16 @@ h1 {
     transform: translateY(20px);
     animation: fadeUp 1s ease forwards;
 }
+.h1d {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #7c3aed, #6d28d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease forwards;
+}
 .description-container-right {
     position:relative;
     right: 1000px;
