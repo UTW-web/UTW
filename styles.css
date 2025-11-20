@@ -36,7 +36,7 @@ body {
 .container-why {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top:1rem;
+    padding:0 2rem;
     padding-bottom:1rem;
     z-index:1000;
 }
@@ -147,7 +147,7 @@ h1 {
     animation: fadeUp 1s ease forwards;
 }
 .h1d {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     background: linear-gradient(45deg, #7c3aed, #6d28d9);
     -webkit-background-clip: text;
