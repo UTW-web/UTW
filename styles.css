@@ -11,8 +11,10 @@
     position: relative;
     top: 20px;
 }
-a {
-    text-decoration: none;
+
+
+a:link, a:visited {
+  text-decoration: none;
 }
 html {
     scroll-behavior: smooth;
@@ -49,7 +51,15 @@ body {
     padding: 0 2rem;
     width: auto;
     min-height:3.5rem;
-    
+    position:sticky;
+}
+@media (max-width:800px) {
+    .container1 {
+        position:fixed;
+        width:100%;
+        background:rgb(0, 0, 0);
+        z-index:10000;
+    }
 }
 
 .head {
@@ -89,7 +99,10 @@ nav {
     background: rgba(10, 10, 10, 0.95);
     z-index: 1000;
 }
-
+.hoverrr:hover {
+    color: #1c1429;
+    background:grey;
+}
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
@@ -243,11 +256,11 @@ section {
 .hamburger {
     overflow: hidden;
     background-color: #333;
-    position: relative;
     display: inline-block;
     position:fixed;
     top: 3.5em;
     z-index:100000;
+    right:0;
 }
 .cookie-modal {
     position: fixed;
