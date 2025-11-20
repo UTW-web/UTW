@@ -46,12 +46,19 @@ function myFunction() {
     x.style.display = x.style.display === "block" ? "none" : "block";
 }
 
+document.addEventListener("click", function (e) {
+    if (e.target.closest(".hamburger")) return; 
+    document.getElementById("myLinks").style.display = "none";
+});
+
+
+
 // Cookie Consent Handling
 document.addEventListener("DOMContentLoaded", function() {
     const banner = document.getElementById("cookie-banner");
     const modal = document.getElementById("cookie-modal");
     const manageBtn = document.getElementById("manage-cookies");
-    const acceptAllBtn = document.getElementById("accept-all");
+    const acceptAllBtn = documznt.getElementById("accept-all");
     const savePreferencesBtn = document.getElementById("save-preferences");
 
     const analyticsCheckbox = document.getElementById("analytics-cookies");

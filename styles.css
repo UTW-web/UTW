@@ -193,20 +193,83 @@ section {
     background-color: #333;
     position: relative;
     display: inline-block;
-    top:100px;
+    position:fixed;
+    top: 2.4em;
+    z-index:100000;
 }
-.cookie-banner, .cookie-modal {
+.cookie-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background: #ffffff;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+    z-index: 9999;
+    display:flex; 
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+}
+
+@media (max-width: 500px) {
+    .cookie-modal {
+        width: 90%;
+        max-width: 90%;
+        border-radius: 15px;
+        padding: 15px;
+    }
+
+    .cookie-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .modal-content label {
+        font-size: 0.9rem;
+    }
+}
+
+  .cookie-banner {
     position: fixed;
     bottom: 10px;
-    left: 30%;
-    right: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 600px;
     background: #d2d1d6;
     color: rgb(24, 26, 63);
     padding: 15px;
+    border-radius: 15px;
     text-align: center;
-    border-radius: 50px;
-  }
+    font-size: 0.9rem;
+    z-index: 9999;
+}
 
+@media (max-width: 600px) {
+    .cookie-banner {
+        width: 95%;
+        font-size: 0.8rem;
+        border-radius: 10px;
+    }
+
+    .cookie-button {
+        width: 48%;
+        margin: 5px 1%;
+    }
+}
+
+#cookie-banner {
+    display: none;
+}
+#cookie-modal {
+    display: none;
+}
 #Myvideo {
     position: absolute;
     width: 100%;
