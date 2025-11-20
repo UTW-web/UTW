@@ -179,7 +179,10 @@ h1 {
     animation: fadeUp 1s ease 0.4s forwards;
     cursor: pointer;
 }
-
+button {
+    border: rgb(13, 9, 60) 2px solid;
+    cursor: pointer;
+}
 .cta-button:hover {
     transform: translateY(-3px);
 }
