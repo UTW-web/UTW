@@ -21,12 +21,21 @@ body {
     color: #fff;
     line-height: 1.6;
     overflow-x: hidden;
+    z-index:0;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+    z-index:1000;
+}
+.container-why {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    z-index:1000;
 }
 .container1 {
     display: flex;
@@ -317,9 +326,7 @@ section {
 .hamburger #myLinks {
     display: none;
 }
-.move2 {
-    margin: 100px;
-}
+
 .move3 {
     margin-top: 100px;
 }
